@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 
-day_df = pd.read_csv('/users/rich/submission/data/day.csv')
+day_df = pd.read_csv('day.csv')
 
 st.title('Analisis Penggunaan Sepeda Berdasarkan Cuaca dan Hari Kerja')
 
@@ -22,7 +22,7 @@ with st.expander("See Explanation:"):
 
 
 
-hour_df = pd.read_csv('/users/rich/submission/data/hour.csv')
+hour_df = pd.read_csv('hour.csv')
 
 hour_df['hour'] = hour_df['hr'].apply(lambda x: f'{x}:00')
 
